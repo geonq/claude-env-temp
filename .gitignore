@@ -1,0 +1,36 @@
+# Whitelist approach: ignore everything in ~/.claude/ by default.
+# Only the universal Claude Code environment (spec'd structure) is version-controlled.
+# Private session transcripts, caches, statsig, plugins, and per-machine state stay local.
+
+# Ignore everything
+*
+
+# Re-include the spec'd structure
+!.gitignore
+!CLAUDE.md
+!AGENTS.md
+!README.md
+!settings.json
+
+!rules/
+!rules/**
+
+!agents/
+!agents/**
+
+!hooks/
+!hooks/**
+
+!modules/
+!modules/**
+
+!bootstrap/
+!bootstrap/**
+
+# Sessions: keep the directory marker, ignore all transient state files
+!sessions/
+sessions/*
+!sessions/.gitkeep
+
+# Never commit OS junk even if it sneaks past the whitelist
+.DS_Store

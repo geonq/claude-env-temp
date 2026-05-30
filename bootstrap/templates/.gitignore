@@ -1,0 +1,29 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.python-version
+
+# Environments / Secrets
+.env
+.env.*
+*.key
+*.pem
+secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Claude Code
+.claude/sessions/
+.openclaw/
+
+# Project-specific (uncomment as needed)
+# TVExports/
+# Research/StrategyCapture/<private_model>/
