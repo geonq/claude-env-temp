@@ -23,6 +23,16 @@ Do not put secrets, private project details, credentials, API keys, session tran
 - Verify before claiming done.
 - Add durable lessons to the relevant project-local context file, not this universal file.
 
+## Response Depth
+
+If a prompt exceeds 50 words, before answering ask:
+**"How do you want me to respond?"** — (1) Quick Answer, (2) Think-Plan-Execute, (3) Thorough Analysis.
+Don't assume. Match depth to need.
+
+## Self-Improvement
+
+After a correction, append a rule to the project's local `CLAUDE.md` (not this file). User-level stays universal.
+
 ## Universal Rules
 
 Load these on demand:
